@@ -1,3 +1,29 @@
 dependencias no ambiente de desenvolvimento:
 gulp@3.9.1
 nodemon@1.12.0
+
+configuração do git
+
+[credential]
+    helper = osxkeychain
+
+[user]
+    name = Djenole Silva
+    email = djenole@gmail.com
+
+[core]
+    editor = code --wait
+
+[push]
+    followTags = true
+
+
+atalhos do git
+[alias]
+c = !git add --all && git commit -m
+s = !git status -s
+l = !git log --prety=format:'%C(white)%H%d %C(yellow)%s - %C(cyan)%cn, %C(green)%cr'  (formatação de texto para melhorar a identificação nos commits)
+amend = !git add --all && git commit --amend --no-edit (caso tenha esquecido de commitar algo, esse amend une o commite atual com o commit anterior)
+count = !git shortlog -s --grep (faz a contagem da quantidade de commits  count test/ count feat/ count fix/ count chore/ count docs)
+
+biblioteca -> git-commit-msg-linter [npm i -D git-commit-msg-linter] (biblioteca que impede um commit fora do padrão)
