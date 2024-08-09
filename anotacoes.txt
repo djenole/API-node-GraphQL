@@ -26,4 +26,4 @@ l = !git log --prety=format:'%C(white)%H%d %C(yellow)%s - %C(cyan)%cn, %C(green)
 amend = !git add --all && git commit --amend --no-edit (caso tenha esquecido de commitar algo, esse amend une o commite atual com o commit anterior)
 count = !git shortlog -s --grep (faz a contagem da quantidade de commits  count test/ count feat/ count fix/ count chore/ count docs)
 
-biblioteca -> git-commit-msg-linter [npm i -D git-commit-msg-linter] (biblioteca que impede um commit fora do padrão)
+biblioteca -> git-commit-msg-linter [npm install git-commit-msg-linter@3.1.0 --save-dev] (biblioteca que impede um commit fora do padrão)
