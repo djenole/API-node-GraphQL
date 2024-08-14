@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node_modules/.bin/nodemon --delay 35 dist/index",
+    "dev": "cross-env NODE_ENV=development node_modules/.bin/nodemon --delay 100 dist/index",
     "gulp": "node_modules/.bin/gulp"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "@types/express-graphql": "0.0.34",
     "@types/graphql": "0.11.5",
     "@types/node": "8.0.34",
+    "cross-env": "^7.0.3",
     "git-commit-msg-linter": "^3.1.0",
     "gulp": "3.9.1",
     "gulp-clean": "0.3.2",
